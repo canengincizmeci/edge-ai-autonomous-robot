@@ -52,22 +52,22 @@ The system is divided into two embedded controllers with separate responsibiliti
 ### Data Flow
 
 
-Camera
-  ↓
-ESP32-S3 AI Camera
-  ↓
-FOMO Object Detection
-  ↓
-Target Position
-  ↓
-Movement Decision
-  ↓
-UART
-  ↓
-ESP32-WROOM
-  ↓
-L298N Motor Driver
-  ↓
+Camera<br>
+↓<br>
+ESP32-S3 AI Camera<br>
+↓<br>
+FOMO Object Detection<br>
+↓<br>
+Target Position<br>
+↓<br>
+Movement Decision<br>
+↓<br>
+UART<br>
+↓<br>
+ESP32-WROOM<br>
+↓<br>
+L298N Motor Driver<br>
+↓<br>
 DC Motors
 
 ## How It Works
