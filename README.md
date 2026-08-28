@@ -36,6 +36,40 @@ The entire perception-to-action pipeline runs locally on the robot without requi
 
 ## System Architecture
 
+The system is divided into two embedded controllers with separate responsibilities:
+
+- **ESP32-S3 AI Camera — Perception & Decision**
+  - Captures camera frames
+  - Runs the FOMO object detection model on-device
+  - Determines the target's position in the frame
+  - Generates autonomous movement commands
+
+- **ESP32-WROOM — Motion Control**
+  - Receives movement commands from the ESP32-S3 via UART
+  - Controls the L298N motor driver
+  - Drives the DC motors according to the received command
+
+### Data Flow
+
+
+Camera
+  ↓
+ESP32-S3 AI Camera
+  ↓
+FOMO Object Detection
+  ↓
+Target Position
+  ↓
+Movement Decision
+  ↓
+UART
+  ↓
+ESP32-WROOM
+  ↓
+L298N Motor Driver
+  ↓
+DC Motors
+
 ## How It Works
 
 ## Hardware
