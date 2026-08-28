@@ -16,8 +16,13 @@ An embedded Edge AI system designed to detect and autonomously follow a moving t
 The system runs a **FOMO (Faster Objects, More Objects)** object detection model directly on an **ESP32-S3 AI Camera**. The detected object's position is converted into autonomous movement decisions and transmitted via **UART** to an **ESP32-WROOM**, which controls the robot's motors through an **L298N motor driver**.
 
 
+## Real-World Test
 
-## Demo
+<p align="center">
+  <img src="docs/media/robot-tracking-demo.gif" width="700" alt="Autonomous target tracking demo">
+</p>
+
+The robot detects the target entirely on-device and autonomously adjusts its movement according to the target's position in the camera frame.
 
 ## Overview
 
