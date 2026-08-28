@@ -7,7 +7,9 @@
 ![Computer Vision](https://img.shields.io/badge/Computer_Vision-Object_Detection-green)
 ![Embedded](https://img.shields.io/badge/Embedded-C%2FC%2B%2B-orange)
 
-![Edge AI Autonomous Robot](./docs/images/robot-overview.jpg)
+<p align="center">
+  <img src="docs/images/robot-overview.jpg" width="700" alt="Edge AI Autonomous Robot">
+</p>
 
 An embedded Edge AI system designed to detect and autonomously follow a moving target without relying on a cloud server or external computer.
 
