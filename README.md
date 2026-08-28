@@ -26,6 +26,14 @@ The robot detects the target entirely on-device and autonomously adjusts its mov
 
 ## Overview
 
+This project is a fully embedded autonomous mobile robot that combines computer vision, Edge AI, and real-time motor control.
+
+A custom object detection model was trained using Edge Impulse and deployed directly to an ESP32-S3 AI Camera. The model detects a target in the camera frame and determines its relative position.
+
+Based on the detection result, the ESP32-S3 generates movement commands such as **LEFT**, **RIGHT**, **FORWARD**, and **STOP**. These commands are transmitted via UART to a separate ESP32-WROOM responsible for motor control.
+
+The entire perception-to-action pipeline runs locally on the robot without requiring a cloud service or external computer.
+
 ## System Architecture
 
 ## How It Works
