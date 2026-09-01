@@ -156,7 +156,7 @@ This iteration illustrates how the final architecture was shaped by the interact
 
 ### Dataset
 
-I personally collected and curated a custom image dataset for this project, capturing the target under different positions, distances, backgrounds, and real-world operating conditions.
+I personally collected and curated a custom image dataset across **6+ different real-world environments**, capturing the target under varying positions, distances, backgrounds, lighting conditions, and camera perspectives. This diversity was intentionally introduced to **reduce the risk of overfitting and improve the model's ability to generalize to unseen environments**.
 
 <p align="center">
   <img src="docs/images/data-collection-example.png" width="700" alt="Example frame from the real-world data collection process">
@@ -418,3 +418,5 @@ Several improvements could further increase the performance and robustness of th
 Computer Engineering Student
 
 Interested in **Backend Engineering, AI Engineering, Edge AI, and Computer Vision**.
+
+This project was developed as a hands-on exploration of deploying computer vision models on resource-constrained embedded hardware and connecting AI inference to real-world autonomous control.
