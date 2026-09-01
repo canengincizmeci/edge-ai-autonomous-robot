@@ -156,15 +156,15 @@ This iteration illustrates how the final architecture was shaped by the interact
 
 ### Dataset
 
-A custom image dataset was collected specifically for this project using images of the target under different positions, distances, backgrounds, and real-world operating conditions.
+I personally collected and curated a custom image dataset for this project, capturing the target under different positions, distances, backgrounds, and real-world operating conditions.
 
 <p align="center">
   <img src="docs/images/data-collection-example.png" width="700" alt="Example frame from the real-world data collection process">
 </p>
 
-Training data was collected from the robot's operating environment and camera perspective so that the model could learn from conditions closer to those encountered during physical testing.
+I collected the training data from the robot's operating environment and camera perspective so that the model could learn from conditions closer to those encountered during physical testing.
 
-Early versions of the dataset were not sufficiently diverse for reliable real-world detection. Additional target samples and **negative images** containing no target object were therefore collected to reduce false detections and improve generalization.
+Early versions of the dataset were not sufficiently diverse for reliable real-world detection. I therefore expanded the dataset with additional target samples and **negative images** containing no target object to reduce false detections and improve generalization.
 
 The final dataset contained **442 images**, split into **354 training** and **88 testing** samples.
 
@@ -418,5 +418,3 @@ Several improvements could further increase the performance and robustness of th
 Computer Engineering Student
 
 Interested in **Backend Engineering, AI Engineering, Edge AI, and Computer Vision**.
-
-This project was developed as a hands-on exploration of deploying computer vision models on resource-constrained embedded hardware and connecting AI inference to real-world autonomous control.
